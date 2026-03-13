@@ -1,0 +1,94 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Principal.master.cs" Inherits="SistemaDeFacturacionCS.Login.Principal" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>Sistema de Facturacion E</title>
+
+    <link rel="shortcut icon" type="image/x-icon" href="/Imagenes/Favicon.png"/>
+
+    <asp:ContentPlaceHolder ID="head" runat="server"> </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+
+        <div id="cabecera">
+
+            <div id="contenidoCabecera">
+
+                <div id="barraHorizontal">
+
+                    <ul>
+                         <li><a href="/Login/Default.aspx">Inicio</a></li>
+                         <li><a href="../Mantenimiento/DefaultMantenimiento.aspx">Mantenimiento</a></li>
+                         <li><a href="../Mantenimiento/FrmEmpresa.aspx">Operaciones</a></li>
+                         <li><a href="../Mantenimiento/FrmEmpresa.aspx">Reportes</a></li>
+                         <li><a href="../Mantenimiento/FrmEmpresa.aspx">Seguridad</a></li>
+                         <li><a href="../Mantenimiento/FrmEmpresa.aspx">Utilitarios</a></li>
+                         <li><a href="../Mantenimiento/FrmEmpresa.aspx">Ayuda</a></li>
+                    </ul>
+
+                </div>
+
+                <div id="logotipo">
+
+                    <%--Llamar imagen de la Base de datos--%>
+                    <div class="row">
+                        <asp:Repeater ID="Repeater1" runat="server">
+                          <ItemTemplate>
+                              <div class="col-md-4">
+                                  <img class="img-responsive" src="data:image/jpg;base64,<%# Convert.ToBase64String((byte[])DataBinder.Eval(Container.DataItem,"Emp_Logo"))%>" />
+                                  <br />
+                              </div>
+                        </ItemTemplate>
+                      </asp:Repeater>
+                    </div>
+
+                </div>
+
+                <div id="titulo">
+                    <h1>Sistema de Facturacion Electronica</h1>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div id="bajo">
+
+            <div id="columnIzq">
+
+                <asp:ContentPlaceHolder ID="contenidoMenuContextual" runat="server">
+
+                </asp:ContentPlaceHolder>
+
+            </div>
+
+            <div id="columnCentro">
+
+                <asp:ContentPlaceHolder ID="contenidoPrincipal" runat="server">
+
+                </asp:ContentPlaceHolder>
+
+            </div>
+
+            <div id="columnDer">
+
+            </div>
+
+            <div id="pie">
+
+                <span id="copy"> &nbsp &nbsp &nbsp &nbsp Copyright © 2025 / Version: 1.0 &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp Usuario: &nbsp</span>
+                <asp:Label ID="LblIdentificacion" runat="server" ForeColor="black" CssClass="LblIdentificacion" Text="" Font-Bold="True"></asp:Label>
+
+            </div>
+
+        </div>
+
+    </div>
+    </form>
+</body>
+</html>
