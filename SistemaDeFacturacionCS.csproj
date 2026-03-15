@@ -145,6 +145,14 @@
     <Content Include="Imagenes\Seleccion.png" />
     <Content Include="Login\Default.aspx" />
     <Content Include="Login\FrmLogin.aspx" />
+    <Content Include="Mantenimiento\DefaultMantenimiento.aspx" />
+    <Content Include="Mantenimiento\FrmBodega.aspx" />
+    <Content Include="Mantenimiento\FrmCaja.aspx" />
+    <Content Include="Mantenimiento\FrmCliente.aspx" />
+    <Content Include="Mantenimiento\FrmCodigo.aspx" />
+    <Content Include="Mantenimiento\FrmEmpresa.aspx" />
+    <Content Include="Mantenimiento\FrmProductos.aspx" />
+    <Content Include="Mantenimiento\FrmSuplidores.aspx" />
     <Content Include="Scripts\bootstrap.bundle.js" />
     <Content Include="Scripts\bootstrap.bundle.min.js" />
     <Content Include="Scripts\bootstrap.esm.js" />
@@ -174,6 +182,7 @@
     <Content Include="Content\bootstrap-grid.min.css.map" />
     <Content Include="Content\bootstrap-grid.css.map" />
     <Content Include="Login\Principal.Master" />
+    <Content Include="Mantenimiento\MPMantenimiento.master" />
     <None Include="Scripts\jquery-3.7.0.intellisense.js" />
     <Content Include="Scripts\jquery-3.7.0.js" />
     <Content Include="Scripts\jquery-3.7.0.min.js" />
@@ -256,6 +265,69 @@
     <Compile Include="Login\Principal.Master.designer.cs">
       <DependentUpon>Principal.Master</DependentUpon>
     </Compile>
+    <Compile Include="Mantenimiento\DefaultMantenimiento.aspx.cs">
+      <DependentUpon>DefaultMantenimiento.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Mantenimiento\DefaultMantenimiento.aspx.designer.cs">
+      <DependentUpon>DefaultMantenimiento.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Mantenimiento\FrmCaja.aspx.cs">
+      <DependentUpon>FrmCaja.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Mantenimiento\FrmCaja.aspx.designer.cs">
+      <DependentUpon>FrmCaja.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Mantenimiento\FrmCliente.aspx.cs">
+      <DependentUpon>FrmCliente.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Mantenimiento\FrmCliente.aspx.designer.cs">
+      <DependentUpon>FrmCliente.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Mantenimiento\FrmCodigo.aspx.cs">
+      <DependentUpon>FrmCodigo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Mantenimiento\FrmCodigo.aspx.designer.cs">
+      <DependentUpon>FrmCodigo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Mantenimiento\FrmEmpresa.aspx.cs">
+      <DependentUpon>FrmEmpresa.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Mantenimiento\FrmEmpresa.aspx.designer.cs">
+      <DependentUpon>FrmEmpresa.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Mantenimiento\FrmProductos.aspx.cs">
+      <DependentUpon>FrmProductos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Mantenimiento\FrmProductos.aspx.designer.cs">
+      <DependentUpon>FrmProductos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Mantenimiento\FrmSuplidores.aspx.cs">
+      <DependentUpon>FrmSuplidores.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Mantenimiento\FrmSuplidores.aspx.designer.cs">
+      <DependentUpon>FrmSuplidores.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Mantenimiento\MPMantenimiento.master.cs">
+      <DependentUpon>MPMantenimiento.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Mantenimiento\MPMantenimiento.master.designer.cs">
+      <DependentUpon>MPMantenimiento.master</DependentUpon>
+    </Compile>
+    <Compile Include="Mantenimiento\FrmBodega.aspx.cs">
+      <DependentUpon>FrmBodega.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Mantenimiento\FrmBodega.aspx.designer.cs">
+      <DependentUpon>FrmBodega.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Site.Master.cs">
       <DependentUpon>Site.Master</DependentUpon>
@@ -282,7 +354,6 @@
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Consultas\" />
-    <Folder Include="Mantenimiento\" />
     <Folder Include="Operaciones\" />
     <Folder Include="Reportes\" />
     <Folder Include="Seguridad\" />

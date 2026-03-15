@@ -32,7 +32,7 @@ namespace SistemaDeFacturacionCS
 
 
             ////----COLE----
-            //this.Servidor = "LAB04PC38";
+            //this.Servidor = "LAB04PC38\\LABO4PC38";
             //this.Usuario = "";
             //this.Clave = "";
             //this.Seguridad = true;

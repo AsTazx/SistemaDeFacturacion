@@ -1,0 +1,1 @@
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Mantenimiento/MPMantenimiento.master" AutoEventWireup="true" CodeBehind="FrmSuplidores.aspx.cs" Inherits="SistemaDeFacturacionCS.Mantenimiento.FrmSuplidores" %>

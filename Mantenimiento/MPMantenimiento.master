@@ -1,0 +1,25 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/Login/Principal.Master" AutoEventWireup="true" CodeBehind="MPMantenimiento.master.cs" Inherits="SistemaDeFacturacionCS.Mantenimiento.MPMantenimiento" %>
+<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+</asp:Content>
+
+
+<asp:Content ID="Content2" ContentPlaceHolderID="contenidoMenuContextual" runat="server">
+
+    <ul id="menuContextual">
+
+        <li> <a> href="FrmEmpresa.aspx">Crear Empresas </a></li>
+        <li> <a> href="FrmBodega.aspx">Crear Bodegas </a></li>
+        <li> <a> href="FrmCaja.aspx">Crear Cajas </a></li>
+        <li> <a> href="FrmCliente.aspx">Crear Clientes </a></li>
+        <li> <a> href="FrmCodigo.aspx">Crear Codigo Barra y QR </a></li>
+        <li> <a> href="FrmProducto.aspx">Crear Productos </a></li>
+        <li> <a> href="FrmSuplidores.aspx">Crear Suplidores </a></li>
+    </ul>
+</asp:Content>
+
+
+<asp:Content ID="Content3" ContentPlaceHolderID="contenidoPrincipal" runat="server">
+    <asp:ContentPlaceHolder ID="contenidoPrincipal" runat="server">
+
+        </asp:ContentPlaceHolder>
+</asp:Content>
