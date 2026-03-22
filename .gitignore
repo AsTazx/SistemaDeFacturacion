@@ -361,6 +361,3 @@ MigrationBackup/
 
 # Fody - auto-generated XML schema
 FodyWeavers.xsd
-/Mantenimiento/FrmBodega.aspx
-/Mantenimiento/FrmBodega.aspx.cs
-/Mantenimiento/FrmBodega.aspx.designer.cs

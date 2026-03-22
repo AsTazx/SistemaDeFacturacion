@@ -1,0 +1,1 @@
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Mantenimiento/MPMantenimiento.master" AutoEventWireup="true" CodeBehind="FrmBodega.aspx.cs" Inherits="SistemaDeFacturacionCS.Mantenimiento.WebForm1" %>
