@@ -78,13 +78,13 @@ namespace SistemaDeFacturacionCS.Mantenimiento
         protected global::System.Web.UI.WebControls.ImageButton ImbImprimir;
 
         /// <summary>
-        /// Panel1 control.
+        /// PnlMensaje control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Panel Panel1;
+        protected global::System.Web.UI.WebControls.Panel PnlMensaje;
 
         /// <summary>
         /// ImgBarras control.
@@ -184,6 +184,15 @@ namespace SistemaDeFacturacionCS.Mantenimiento
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox TxtDireccion;
+
+        /// <summary>
+        /// TxtTelefono control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlInputText TxtTelefono;
 
         /// <summary>
         /// TxtRNC control.
