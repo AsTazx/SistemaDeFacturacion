@@ -52,8 +52,8 @@
     <asp:TextBox ID="TxtNombre" runat="server" CssClass="TxtNombre" ForeColor="#0066FF" AutoCompleteType="Disabled" font-size="Medium" Font-Bold="True" maxlength="50"></asp:TextBox>
     <asp:TextBox ID="TxtDireccion" runat="server" CssClass="TxtDireccion" ForeColor="#0066FF" Font-Bold="True" AutoCompleteType="Disabled" font-size="Medium" maxlength="50"></asp:TextBox>
 
-    <div class="TxtTelefono"  >
-        <input ID="TxtTelefono" runat="server" style="width : 97%; height: 2.4%; font-weight: bold; font-size: medium; color:#0066FF" title="Introduzca el telefono de la compañia"  OnFocus = " this . style . borderColor = 'black' " onKeyPress="return acceptNum(event)" type="text"  name="Phone" placeholder="" onkeyup="
+    <div class="TxtTelefono" style="width: 165px; left: 395px; top: 335px;" >
+        <input ID="TxtTelefono" runat="server" style="width : 118%; height: 4%; font-weight: bold; font-size: medium; color:#0066FF" title="Introduzca el telefono de la compañia"  OnFocus = " this . style . borderColor = 'black' " onKeyPress="return acceptNum(event)" type="text"  name="Phone" placeholder="" onkeyup="
         var Phone = this.value;
         if (Phone.match(/^\d{3}$/) !== null) {
         this.value = Phone + '-';
@@ -62,7 +62,7 @@
         }" maxlength="12" autocomplete="off">
     </div>
 
-    <div class="TxtRNC" >
+    <div class="TxtRNC" style="width: 168px; left: 385px; top: 389px" >
         <input ID="TxtRNC" runat="server" style="width: 97%; height: 2.4%; font-weight: bold; font-size: medium; color:#0066FF" title="Introduzca el RNC de la compañia" OnFocus = " this . style . borderColor = 'black' " OnBlur = " this . style . borderColor = '' " onKeyPress="return acceptNum(event)" type="text" name="RNC" placeholder="" onkeyup="
         var RNC = this.value;
         if (RNC.match(/^\d{3}$/) !== null) {

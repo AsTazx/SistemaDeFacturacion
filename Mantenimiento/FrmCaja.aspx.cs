@@ -16,13 +16,15 @@ namespace SistemaDeFacturacionCS.Mantenimiento
 {
     public partial class FrmCaja : System.Web.UI.Page
     {
+        //CONEXION DB
         SqlConnection SqlCon = new SqlConnection();
 
         private void ContarRegistro()
         {
+            //VERIFICAR SI EXISTE REGISTRO BD
             SqlCon = ConexionDB.getInstancia().CrearConexion();
             SqlCon.Open();
-            SqlCommand cmd = new SqlCommand("sp_ContarRegistro_Caja", SqlCon);
+            SqlCommand cmd = new SqlCommand("Sp_ContarRegistro_Caja", SqlCon);
             cmd.CommandType = CommandType.StoredProcedure;
             int maxId = Convert.ToInt32(cmd.ExecuteScalar());
             TxtCodigo.Text = maxId.ToString();
@@ -139,7 +141,6 @@ namespace SistemaDeFacturacionCS.Mantenimiento
         {
             SqlCon = ConexionDB.getInstancia().CrearConexion();
             DataTable dt = new DataTable();
-            SqlCon.Open();
             SqlCommand comando = new SqlCommand("sp_Consulta_GridCaja", SqlCon);
             comando.CommandType = CommandType.StoredProcedure;
             SqlDataAdapter sda = new SqlDataAdapter(comando);
