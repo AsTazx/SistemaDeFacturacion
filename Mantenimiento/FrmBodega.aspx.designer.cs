@@ -11,7 +11,7 @@ namespace SistemaDeFacturacionCS.Mantenimiento
 {
 
 
-    public partial class WebForm1
+    public partial class FrmBodega
     {
 
         /// <summary>
@@ -85,6 +85,15 @@ namespace SistemaDeFacturacionCS.Mantenimiento
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Panel PnlMensaje;
+
+        /// <summary>
+        /// GridView1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.GridView GridView1;
 
         /// <summary>
         /// ImgBarras control.
@@ -177,15 +186,6 @@ namespace SistemaDeFacturacionCS.Mantenimiento
         protected global::System.Web.UI.WebControls.Panel PnlGridview;
 
         /// <summary>
-        /// GridView1 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.GridView GridView1;
-
-        /// <summary>
         /// PnlCuadroGridView control.
         /// </summary>
         /// <remarks>
@@ -193,5 +193,23 @@ namespace SistemaDeFacturacionCS.Mantenimiento
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Panel PnlCuadroGridView;
+
+        /// <summary>
+        /// ScriptManager1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.ScriptManager ScriptManager1;
+
+        /// <summary>
+        /// Timer1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.Timer Timer1;
     }
 }

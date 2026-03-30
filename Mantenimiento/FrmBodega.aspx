@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Mantenimiento/MPMantenimiento.master" AutoEventWireup="true" CodeBehind="FrmBodega.aspx.cs" Inherits="SistemaDeFacturacionCS.Mantenimiento.WebForm1" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Mantenimiento/MPMantenimiento.master" AutoEventWireup="true" CodeBehind="FrmBodega.aspx.cs" Inherits="SistemaDeFacturacionCS.Mantenimiento.FrmBodega" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="ContenidoPrincipal" runat="server">
 <h2>&nbsp Crear Bodegas</h2>
 
@@ -13,6 +13,23 @@
 
 
     <asp:Panel ID="PnlMensaje" runat="server" CssClass="ImgBarraAzul" Width="784px" Height="50px">
+        <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="false" Font-Size="25px" OnSelectedIndexChanged="GridView1_SelectedIndexChanged">
+            <FooterStyle BackColor="#F7DFB5" ForeColor="#8C4510" />
+            <HeaderStyle BackColor="#A55129" Font-Bold="True" ForeColor="White" Wrap="False" />
+            <PagerStyle ForeColor="#8C4510" HorizontalAlign="Center" />
+            <RowStyle BackColor="#FFF7E7" ForeColor="#8C4510" />
+            <SelectedRowStyle BackColor="#738A9C" Font-Bold="True" ForeColor="White" />
+            <SortedAscendingCellStyle BackColor="#FFF1D4" />
+            <SortedAscendingHeaderStyle BackColor="#B95C30" />
+            <SortedDescendingCellStyle BackColor="#F1E5CE" />
+            <SortedDescendingHeaderStyle BackColor="#93451F" />
+            <Columns>
+                <asp:CommandField ButtonType="Image" SelectImageUrl="../Imagenes/Seleccion.png" ShowSelectButton="True" />
+                <asp:BoundField DataField="Bod_Codigo" HeaderText="Codigo" />
+                <asp:BoundField DataField="Bod_Referencia" HeaderText="Referencia" />
+                <asp:BoundField DataField="Bod_Descripcion" HeaderText="Descripcion" />
+            </Columns>
+        </asp:GridView>
         <asp:Image ID="ImgBarras" runat="server" ImageUrl="~/Imagenes/BarraAzul.png" CssClass="ImgBarraAzul" Width="852px" Height="50px"/>
         <asp:Label ID="LblMensaje2" runat="server" Text="Mensaje.:" Font-Bold="true" ForeColor="Black" CssClass="LblMensaje2"></asp:Label>
     </asp:Panel>
@@ -27,24 +44,14 @@
     </asp:Panel>
 
     <asp:Panel ID="PnlGridview" runat="server" BorderStyle="Outset" Width="764px" CssClass="PnlPanel" Height="216px" ScrollBars="Auto" ToolTip="Buscar Registro">
-    <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="false" Font-Size="25px" OnSelectedIndexChanged="GridView1_SelectedIndexChanged">
-        <FooterStyle BackColor="#F7DFB5" ForeColor="#8C4510" />
-        <HeaderStyle BackColor="#A55129" Font-Bold="True" Wrap="False" ForeColor="White" />
-        <PagerStyle ForeColor="#8C4510" HorizontalAlign="Center" />
-        <RowStyle BackColor="#FFF7E7" ForeColor="#8C4510" />
-        <SelectedRowStyle BackColor="#738A9C" ForeColor="White" Font-Bold="True" />
-        <SortedAscendingCellStyle BackColor="#FFF1D4" />
-        <SortedAscendingHeaderStyle BackColor="#B95C30" />
-        <SortedDescendingCellStyle BackColor="#F1E5CE" />
-        <SortedDescendingHeaderStyle BackColor="#93451F" />
-        <Columns>
-            <asp:CommandField ButtonType="Image" ShowSelectButton="True" SelectImageUrl="../Imagenes/Seleccion.png" />
-            <asp:BoundField DataField="Bod_Codigo" HeaderText="Codigo" />
-            <asp:BoundField DataField="Bod_Referencia" HeaderText="Referencia" />
-            <asp:BoundField DataField="Bod_Descripcion" HeaderText="Descripcion" />
-        </Columns>
-    </asp:GridView>
 </asp:Panel>
 
-    <asp:Panel ID="PnlCuadroGridView" runat="server" BorderStyle="Solid" Width="768px" CssClass="PnlPanel2" Height="218px" ScrollBars="Auto" ToolTip="Buscar Registro">
+
+ <asp:Panel ID="PnlCuadroGridView" runat="server" BorderStyle="Solid" Width="768px" CssClass="PnlPanel2" Height="218px" ScrollBars="Auto" ToolTip="Buscar Registro"></asp:Panel>
+
+    <asp:ScriptManager ID="ScriptManager1" runat="server"></asp:ScriptManager>
+    <asp:Timer ID="Timer1" runat="server" Interval="4000" Enabled="False" OnTick="Timer1_Tick"></asp:Timer>
+
+    </asp:content>
+
         
