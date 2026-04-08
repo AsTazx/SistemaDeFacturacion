@@ -17,7 +17,7 @@ using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace SistemaDeFacturacionCS.Mantenimiento
 {
-    public partial class FrmClientes : System.Web.UI.Page
+    public partial class FrmCliente : System.Web.UI.Page
     {
         //Conexion BD
         SqlConnection SqlCon = new SqlConnection();
